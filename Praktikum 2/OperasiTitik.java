@@ -21,7 +21,7 @@ class OperasiTitik{
 }
 
 /* Tugas */
-class OperasiTitik1{
+class OperasiTitik{
 	private void refleksiSumbuX(Titik t1){
 		double ordinat = t1.getOrdinat();
 		ordinat = ordinat*-1;
