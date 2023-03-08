@@ -5,42 +5,27 @@
 * Deskripsi : Kelas yang berisi program operasi titik
 */
 
-/* Latihan */
-class OperasiTitik{
-	public void refleksiSumbuX(Titik titik){
-		double ordinat = titik.getOrdinat();
-		ordinat = ordinat*-1;
-		titik.setOrdinat(ordinat);
-	}
-	
-	public void refleksiSumbuY(Titik titik){
-		double absis = titik.getAbsis();
-		absis = absis*-1;
-		titik.setAbsis(absis);
-	}
-}
+public class OperasiTitik {
 
-/* Tugas */
-class OperasiTitik{
-	private void refleksiSumbuX(Titik t1){
-		double ordinat = t1.getOrdinat();
-		ordinat = ordinat*-1;
-		t1.setOrdinat(ordinat);
-	}
-	
-	private void refleksiSumbuY(Titik t1){
-		double absis = t1.getAbsis();
-		absis = absis*-1;
-		t1.setAbsis(absis);
-	}
-	
-	public Titik refleksiX(Titik t1){
-		refleksiSumbuX(t1);
-		return t1;
-	}
-	
-	public Titik refleksiY(Titik t1){
-		refleksiSumbuY(t1);
-		return t1;
-	}
+    // Private method - Tugas
+    private void refleksiSumbuX(Titik t1){
+        t1.setAbsis(t1.getAbsis());
+        t1.setOrdinat(-1*(t1.getOrdinat()));
+    }
+
+    private void refleksiSumbuY(Titik t1){
+        t1.setAbsis(-1*(t1.getAbsis()));
+        t1.setOrdinat(t1.getOrdinat());
+    }
+
+    // Public method - Latihan
+    public Titik refleksiX(Titik t1){
+        refleksiSumbuX(t1);
+        return t1;
+    }
+
+    public Titik refleksiY(Titik t1){
+        refleksiSumbuY(t1);
+        return t1;
+    }
 }
