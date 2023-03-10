@@ -11,11 +11,11 @@ import org.bangundatar.*;
  
 public class MPoligon{ 
     public static void main(String[] args){ 
-        PersegiPanjang persegi = new PersegiPanjang(10,10,4); 
-		Segitiga segitiga = new Segitiga(7,24,25,3); 
-        persegi.printInfo(); 
+        PersegiPanjang persegi = new PersegiPanjang(10,10,4);
+        Segitiga segitiga = new Segitiga(7,24,25,3);
+        persegi.printInfo();
         System.out.println("Luas Persegi Panjang : "+persegi.hitungLuas());
-        segitiga.printInfo(); 
+        segitiga.printInfo();
         System.out.println("Panjang Sisi Miring adalah : "+segitiga.Pythagoras()); 
     } 
 }
