@@ -1,5 +1,5 @@
 /* 
-* MPoligon.java 18/03/2023
+* Poligon.java 18/03/2023
 * Penulis : Arynda Anna Salsabiela
 * NIM : 24060121120023
 * Deskripsi : Representasi dasar dari objek Poligon (segi banyak)
